@@ -6,6 +6,30 @@
   --accent-text-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'roboto', sans-serif;
   color: var(--title-color);
@@ -32,9 +56,31 @@ body {
   margin: -1px;
 }
 
-/* HEADER */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 
-.logo {
+/* -----------------------------HEADER---------------------------- */
+
+.header {
+  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -45,6 +91,16 @@ body {
 
 .first-logo {
   color: var(--accent-color);
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.header-item + .header-item {
+  margin-left: 50px;
 }
 
 .header-link {
@@ -60,15 +116,34 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+
 .mail,
 .tel {
   color: #757575;
 }
 
-/* HERO */
+/* ------------------------------HERO----------------------- */
 
 .hero {
-  background-color: gray;
+  background-color: #2f303a;
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -79,6 +154,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-text-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -88,17 +164,38 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--accent-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+  background: #2196f3;
+  border-radius: 4px;
+  margin-left: 485px;
+  min-width: 200px;
+  height: 50px;
 }
 
-/* advantages */
+/* -----------------------advantages-------------------------- */
+
+.advantages {
+  background-color: #e5e5e5;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
 
 .advantages-item-title {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-item-text {
@@ -108,22 +205,52 @@ body {
   color: var(--text-color);
 }
 
-/* services */
+/* ------------------------services--------------------------- */
+.services {
+  background-color: #e5e5e5;
+  padding-bottom: 94px;
+}
 
 .services-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
-/* team */
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------------------------team--------------------------- */
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .team-item-title {
@@ -132,6 +259,8 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-item-text {
@@ -142,10 +271,12 @@ body {
   color: var(--text-color);
 }
 
-/* footer */
+/* ----------------------------footer-------------------------- */
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -155,6 +286,7 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  margin-bottom: 20px;
 }
 
 .address-link {
@@ -175,9 +307,9 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*                      PORTFOLIO                       */
+/*---------------------PORTFOLIO-----------------------*/
 
-/* Works */
+/* ---------------------Works-------------------------- */
 
 .filter-btn {
   font-family: Roboto;
