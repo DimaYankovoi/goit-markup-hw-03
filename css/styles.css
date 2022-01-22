@@ -281,7 +281,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 /* ----------------------------footer-------------------------- */
@@ -393,5 +393,5 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-left: 24px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
