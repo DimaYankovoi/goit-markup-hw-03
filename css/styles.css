@@ -61,7 +61,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* -----------------------------HEADER---------------------------- */
@@ -70,6 +75,7 @@ body {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -142,8 +148,15 @@ body {
 }
 
 .hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 106px;
+  padding-bottom: 106px;
+}
+
+.hero-title-container {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-title {
@@ -166,6 +179,7 @@ body {
   color: var(--accent-text-color);
   background: #2196f3;
   border-radius: 4px;
+  border: none;
   margin-left: 485px;
   min-width: 200px;
   height: 50px;
@@ -174,9 +188,8 @@ body {
 /* -----------------------advantages-------------------------- */
 
 .advantages {
-  background-color: #e5e5e5;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: #ffffff;
+  padding-bottom: 0;
 }
 
 .advantages-list {
@@ -207,8 +220,7 @@ body {
 
 /* ------------------------services--------------------------- */
 .services {
-  background-color: #e5e5e5;
-  padding-bottom: 94px;
+  background-color: #ffffff;
 }
 
 .services-title {
@@ -228,8 +240,6 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -243,7 +253,6 @@ body {
 .team-list {
   display: flex;
   margin-left: -30px;
-  margin-bottom: -30px;
   flex-wrap: wrap;
 }
 
@@ -286,7 +295,14 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  margin-bottom: 20px;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.adderess-item + .adderess-item {
+  margin-top: 9px;
 }
 
 .address-link {
@@ -311,6 +327,20 @@ body {
 
 /* ---------------------Works-------------------------- */
 
+.works {
+  background: #ffffff;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item + .filter-item {
+  margin-left: 8px;
+}
+
 .filter-btn {
   font-family: Roboto;
   font-weight: 500;
@@ -319,7 +349,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
 
 .filter-btn:hover,
@@ -328,10 +360,27 @@ body {
   background-color: var(--accent-color);
 }
 
+.works-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
 .works-item-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
 .works-item-text {
@@ -339,4 +388,6 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
