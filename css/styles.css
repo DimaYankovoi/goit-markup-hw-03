@@ -4,6 +4,7 @@
   --second-text-color: #212121;
   --title-color: #212121;
   --accent-text-color: #ffffff;
+  --background-color: #ffffff;
 }
 
 p,
@@ -72,7 +73,7 @@ body {
 /* -----------------------------HEADER---------------------------- */
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
@@ -188,7 +189,7 @@ body {
 /* -----------------------advantages-------------------------- */
 
 .advantages {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding-bottom: 0;
 }
 
@@ -220,7 +221,7 @@ body {
 
 /* ------------------------services--------------------------- */
 .services {
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 .services-title {
@@ -260,6 +261,8 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  background-color: var(--background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title {
@@ -328,7 +331,7 @@ body {
 /* ---------------------Works-------------------------- */
 
 .works {
-  background: #ffffff;
+  background-color: var(--background-color);
 }
 
 .filter-list {
